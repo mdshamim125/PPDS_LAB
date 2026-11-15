@@ -1,0 +1,21 @@
+First: Basic OpenMP concepts
+Before solving the problems, understand these essential terms.
+Term	Explanation
+OpenMP	An API used for parallel programming in C, C++ and Fortran.
+Thread	A small unit of execution within a process.
+Parallel Processing	Executing multiple parts of a program simultaneously.
+Sequential Processing	Executing instructions one after another.
+Directive	An instruction that tells OpenMP how to execute code.
+#pragma omp parallel	Creates a team of threads to execute a code block.
+#pragma omp parallel for	Distributes loop iterations among multiple threads.
+private()	Gives each thread its own separate copy of a variable.
+reduction()	Combines individual thread results into one final result.
+
+Header file:
+
+#include <omp.h>
+
+This header file provides OpenMP functions such as:
+- omp_get_thread_num()
+- omp_get_num_threads()
+- omp_get_wtime()
